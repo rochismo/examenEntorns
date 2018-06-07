@@ -1,10 +1,11 @@
-import java.util.ArrayList;
+package Entities;
 
 public class Assignatura {
-    public long id = 0;
+
+    private long id = 0;
     private String nom = "";
     private int hores = 0;
-    public int credits = 0;
+    private int credits = 0;
     private boolean disponible = false;
 
     public Assignatura(long id, String nom, int hores, int credits, boolean disponible) {
@@ -13,11 +14,6 @@ public class Assignatura {
         this.hores = hores;
         this.credits = credits;
         this.disponible = disponible;
-    }
-
-    public static void main(String[] args) {
-        CreateAssignatura createAssignatura = new CreateAssignatura();
-        createAssignatura.init();
     }
 
     public long getId() {
@@ -59,4 +55,6 @@ public class Assignatura {
     public void setDisponible(boolean disponible) {
         this.disponible = disponible;
     }
+
+
 }
